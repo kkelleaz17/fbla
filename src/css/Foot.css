@@ -1,0 +1,34 @@
+.Footer {
+  background-color: var(--White);
+  padding: 40px;
+  text-align: center;
+}
+
+.Footer img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+.Footer p {
+  color: var(--Black);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.Footer a {
+  color: var(--Black);
+  text-decoration: none;
+  margin: 10px 20px;
+  font-size: 20px;
+}
+
+
+
+.links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: var(--Red) 2px solid;
+  border-bottom: var(--Red) 2px solid;
+  padding-block: 20px;
+}

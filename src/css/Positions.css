@@ -1,0 +1,57 @@
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+
+.job-card {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+}
+
+.job-benefits-heading{
+    width: 100%;
+    padding: 50px;
+    text-align: left !important;
+    color: #FF0000 !;
+
+}
+
+.job-title {
+  color: #000000;
+  margin-bottom: 10px;
+
+}
+
+.job-description {
+  color: #808080;
+}
+
+
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #FF0000;
+  color: white;
+}

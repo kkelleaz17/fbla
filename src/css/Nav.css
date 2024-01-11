@@ -1,0 +1,52 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline:50px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px 0px;
+  margin-bottom: 20px;
+}
+.SpecialButton{
+  background-color: var(--Red) !important;
+  padding: 15px;
+  color: white !important;
+  border-radius: 5px;
+}
+.Navbar img {
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.Links {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Links button {
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Navbar a:hover {
+  color: #FF0000;
+}

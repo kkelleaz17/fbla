@@ -1,0 +1,43 @@
+/* .application-form-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #FF0000;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+  }
+  
+  button[type="submit"] {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: black;
+  } */

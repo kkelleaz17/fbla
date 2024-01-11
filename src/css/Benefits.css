@@ -1,0 +1,43 @@
+.job-benefits-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .job-benefits-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .job-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .job-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .job-description {
+    margin-bottom: 10px;
+  }
+  
+  .benefits-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .benefits-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 5px;
+  }
