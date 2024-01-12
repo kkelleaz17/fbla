@@ -1,10 +1,11 @@
 .jobs-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
-  gap: 20px;
-  text-align: center;
+  display: flex;
+  gap: 5px;
+  flex-flow: wrap row;
   transition: all 0.3s ease-in;
+  min-height: 100vh;
+  padding-inline:50px;
+  padding-block: 10px;
 }
 
 .job-card {
@@ -13,22 +14,45 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
 }
 
 .job-benefits-heading{
     width: 100%;
-    padding: 50px;
     text-align: left !important;
-    color: #FF0000 !;
-
+    color: var(--Red);
+    width: calc(100%-100px);
+    padding-inline:50px;
+    padding-block: 10px;
 }
 
-.job-title {
+.job-title,.job-description {
+  padding: 0px;
+  margin: 0px;
   color: #000000;
   margin-bottom: 10px;
 
 }
-
+.ViewMore{
+  width: 105px;
+  background: var(--Red);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
 .job-description {
   color: #808080;
 }
@@ -36,8 +60,11 @@
 
 .filter-btns {
   display: flex;
-  justify-content: center;
+  padding-inline:50px;
+  padding-block: 10px; 
   margin-bottom: 20px;
+  overflow: auto;
+  
 }
 
 .filter-btn {
@@ -51,7 +78,20 @@
   cursor: pointer;
 }
 
+@media screen and (max-width:1100px) {
+  .filter-btn{
+    width: auto;
+    min-width: 150px;
+  }
+}
 .filter-btn.active {
-  background: #FF0000;
+  background: var(--Red);
   color: white;
+}
+
+.jobs-heading {
+ width: calc(100%-50px);
+ padding-inline:50px;
+ padding-block: 10px;
+
 }

@@ -1,0 +1,55 @@
+.job-position {
+    transition: all 0.3s ease-in;
+    min-height: 100vh;
+  }
+.job-position-heading{
+    margin: 0;
+    width: 100%;
+    text-align: left !important;
+    color: var(--Black);
+    width: calc(100%-100px);
+    padding-inline:50px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.job-position-subheading{
+    margin: 0;
+    margin-block: 10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: left !important;
+    color: var(--black);
+    width: calc(100%-100px);
+    padding-inline:50px;
+    padding-block: 0px;
+}
+.job-name{
+    height: auto;
+}
+.ptag{
+    width: 500px;
+}
+@media screen and (max-width:750px){
+    .ptag{
+        width: auto;
+    }
+}
+.job-BottomArea{
+    width: calc(100%-100px);
+    padding-inline:50px;
+    margin-top: 50px;
+}
+.job-BottomArea h1{
+    font-size: 18px;
+}
+.ApplyHere{
+    background: var(--Red);
+    color: var(--White);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}

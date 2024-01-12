@@ -8,6 +8,7 @@ import Application from './pages/Application.jsx'
 import AvailablePositions from './pages/AvailablePositions.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './pages/Footer.jsx'
+import AvailablePosition from './pages/AvailablePosition.jsx'
 import './main.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
@@ -16,8 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route element={<Home />} path="/" />
       <Route element={<Benefits />} path="/benefits" />
-      <Route element={<Application />} path="/application" />
+      <Route element={<Application />} path="/application/:position" />
       <Route element={<AvailablePositions />} path="/available-positions" />
+      <Route element={<AvailablePosition />} path="/available-positions/:position" />
       <Route element={<h1>Not Found</h1>} path="*" />
     </Routes>
     <Footer />

@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Cashier",
+    "description": "Cashiers handle customer transactions, operate cash registers, and process payments.",
+    "category": "Store Operations",
+    "wage": "$10.00 per hour",
+    "hours": "Part-time, 20-25 hours per week",
+    "sick_time": "4 hours per month",
+    "work_experience": "No prior experience required.",
+    "work_environment": "Fast-paced, customer-facing",
+    "job_requirements": "Basic math skills, good communication, and customer service skills",
+    "expectations": "Provide friendly and efficient customer service, handle cash accurately and responsibly, maintain a clean and organized checkout area."
+  },
+  {
+    "id": 2,
+    "title": "Store Clerk",
+    "description": "Store clerks perform a range of duties, including restocking shelves, organizing merchandise, and maintaining store cleanliness.",
+    "category": "Store Operations",
+    "wage": "$9.50 per hour",
+    "hours": "Full-time, 35-40 hours per week",
+    "sick_time": "8 hours per month",
+    "work_experience": "No prior experience required.",
+    "work_environment": "Team-oriented, physically demanding",
+    "job_requirements": "Attention to detail, ability to lift heavy objects, organizational skills",
+    "expectations": "Ensure shelves are stocked and products are displayed neatly, assist customers in finding products, maintain cleanliness throughout the store."
+  },
+  {
+    "id": 3,
+    "title": "Sales Associate",
+    "description": "Sales associates help customers with their purchases, suggest additional items, and provide product information.",
+    "category": "Sales",
+    "wage": "$10.25 per hour",
+    "hours": "Part-time, 15-20 hours per week",
+    "sick_time": "4 hours per month",
+    "work_experience": "No prior experience required.",
+    "work_environment": "Sales-focused, customer-oriented",
+    "job_requirements": "Strong interpersonal skills, sales aptitude, product knowledge",
+    "expectations": "Deliver exceptional customer service, meet sales targets, maintain a well-stocked and organized sales floor."
+  },
+  {
+    "id": 4,
+    "title": "Shift Supervisor",
+    "description": "Shift supervisors oversee the daily operations of the convenience store, manage employees, assign tasks, and handle cash management.",
+    "category": "Management",
+    "wage": "$12.00 per hour",
+    "hours": "Full-time, 40 hours per week",
+    "sick_time": "8 hours per month",
+    "work_experience": "Previous supervisory or leadership experience preferred.",
+    "work_environment": "Leadership role, fast-paced",
+    "job_requirements": "Supervisory skills, cash handling experience, problem-solving abilities",
+    "expectations": "Supervise and motivate team members, ensure smooth store operations, handle customer complaints effectively."
+  },
+  {
+    "id": 5,
+    "title": "Food Service Worker",
+    "description": "Food service workers in convenience stores prepare and serve food items, maintain cleanliness and hygiene standards, and manage inventory for food and beverage items.",
+    "category": "Food Service",
+    "wage": "$9.75 per hour",
+    "hours": "Part-time, 25-30 hours per week",
+    "sick_time": "6 hours per month",
+    "work_experience": "No prior experience required.",
+    "work_environment": "Food preparation, customer service",
+    "job_requirements": "Food handling and safety knowledge, ability to work in a fast-paced environment",
+    "expectations": "Prepare food items following safety and hygiene standards, provide prompt and friendly service to customers, monitor and manage food inventory."
+  },
+  {
+    "id": 6,
+    "title": "Security Personnel",
+    "description": "Security personnel in larger convenience stores prevent theft, monitor surveillance systems, and ensure the safety of customers and employees.",
+    "category": "Security",
+    "wage": "$11.50 per hour",
+    "hours": "Part-time, 20-25 hours per week",
+    "sick_time": "4 hours per month",
+    "work_experience": "Previous security or related experience preferred.",
+    "work_environment": "Security-focused, vigilant",
+    "job_requirements": "Security training, attention to detail, ability to handle emergencies",
+    "expectations": "Maintain a safe and secure environment, monitor surveillance systems, respond to incidents or emergencies promptly."
+  },
+  {
+    "id": 7,
+    "title": "Maintenance Staff",
+    "description": "Maintenance staff members are responsible forgeneral upkeep and cleanliness of the store, including cleaning floors, restrooms, and common areas.",
+    "category": "Store Operations",
+    "wage": "$10.00 per hour",
+    "hours": "Full-time,40 hours per week",
+    "sick_time": "8 hours per month",
+    "work_experience": "No prior experience required.",
+    "work_environment": "Physical work, attention to detail",
+    "job_requirements": "Ability to perform physical tasks, basic maintenance knowledge",
+    "expectations": "Ensure cleanliness and maintenance of the store, perform routine cleaning tasks, address minor repairs and maintenance issues."
+  }
+]

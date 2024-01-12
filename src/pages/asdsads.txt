@@ -1,0 +1,29 @@
+import React, { useEffect, useMemo } from 'react'
+import Openings from '../util/JobOpenings.json'
+import { useNavigate, useParams } from 'react-router-dom'
+export default function AvailablePosition() {
+    const Position = useParams().position;
+    const Navigate = useNavigate();
+    const IsValid = useMemo(()=>{
+        for(let i in Openings){
+            console.log(Openings[i].title.toLowerCase().trim(),Position)
+            if(Openings[i].title.toLowerCase().trim() == Position){
+                return true
+            }
+        }
+        return false
+    },[Position])
+    useEffect(()=>{
+        if(!IsValid){
+            Navigate('/')
+            return;
+        }
+    },[Position])
+    if(!IsValid){
+        return;
+    }
+    
+  return (
+    <div>{Position}</div>
+  )
+}
