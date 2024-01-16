@@ -15,7 +15,7 @@ export default function Home() {
         <div className='herounder'>
           <h1 className='hero'>Looking for Job opportunities?</h1> {/* Displaying a heading */}
           <div className='contactsarea'>
-            <button className={'findjobs'} onClick={() => { Nav('/available-positions') }}>Find Jobs</button> {/* Rendering a button with an onClick event handler */}
+            <button className={'findjobs'} onClick={() => { Nav('/available-positions') }}>Find Available Positions</button> {/* Rendering a button with an onClick event handler */}
             <h2>or</h2> {/* Displaying a heading */}
             <h1 className='contact'>Contact us at (623)-936-3737</h1> {/* Displaying a heading */}
           </div>
