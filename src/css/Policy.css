@@ -1,0 +1,17 @@
+.policy-header{
+    margin: 0;
+    text-align: left !important;
+    color: var(--Black);
+    width: calc(100%-100px);
+    padding-inline:50px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.policys{
+    width: calc(100%-100px);
+    padding-inline:50px;
+    padding-top: 10px;
+}
+.policy-container{
+    min-height: 100vh;
+}

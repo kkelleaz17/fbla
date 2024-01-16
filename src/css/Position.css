@@ -4,7 +4,6 @@
   }
 .job-position-heading{
     margin: 0;
-    width: 100%;
     text-align: left !important;
     color: var(--Black);
     width: calc(100%-100px);
@@ -16,7 +15,6 @@
     margin: 0;
     margin-block: 10px;
     font-size: 15px;
-    width: 100%;
     text-align: left !important;
     color: var(--black);
     width: calc(100%-100px);

@@ -1,0 +1,85 @@
+
+.Application-heading {
+    width: calc(100%-50px);
+    padding-inline:50px;
+    padding-block: 10px;
+}
+.application-form-container{
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease-in;
+    min-height: auto;
+    padding-inline:50px;
+    padding-block: 10px;
+    flex-direction: column;
+}
+.application-form-container div{
+    display: flex;
+    gap:10px
+}
+.Application-Around{
+    min-height: 100vh;
+}
+.application-form-container div div{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+.inputArea label,.checkbox label{
+    font-size: 18px;
+}
+.checkbox div label{
+    gap:10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+.inputArea input,.inputArea select{
+    background-color: rgb(250, 251, 252);
+    border-color: rgb(223, 225, 230);
+    color: var(--Black);
+    cursor: text;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+    line-height: 1.42857; 
+    padding: 8px 6px;
+    height: 50px;
+    width: 425px;
+}
+.inputArea input:hover{
+    background-color: rgb(235, 236, 240);
+}
+.inputArea input:focus{
+    background-color: rgb(255, 255, 255);
+    border-color: var(--Red);
+}
+.submit{
+    background: var(--Red);
+    color: var(--White);
+    border: none;
+    padding: 10px 20px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:980px){
+    .application-form-container div{
+        display: flex;
+        gap:10px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px){
+    .inputArea input,.inputArea select{
+        width: 100%;
+    }
+}

@@ -1,4 +1,5 @@
 [
+  
   {
     "id": 1,
     "title": "Cashier",
@@ -80,7 +81,7 @@
   {
     "id": 7,
     "title": "Maintenance Staff",
-    "description": "Maintenance staff members are responsible forgeneral upkeep and cleanliness of the store, including cleaning floors, restrooms, and common areas.",
+    "description": "Maintenance staff members are responsible for general upkeep and cleanliness of the store, including cleaning floors, restrooms, and common areas.",
     "category": "Store Operations",
     "wage": "$10.00 per hour",
     "hours": "Full-time,40 hours per week",
@@ -90,4 +91,5 @@
     "job_requirements": "Ability to perform physical tasks, basic maintenance knowledge",
     "expectations": "Ensure cleanliness and maintenance of the store, perform routine cleaning tasks, address minor repairs and maintenance issues."
   }
+
 ]

@@ -3,11 +3,14 @@
   gap: 5px;
   flex-flow: wrap row;
   transition: all 0.3s ease-in;
-  min-height: 100vh;
+  min-height: auto;
+  align-content: center;
   padding-inline:50px;
   padding-block: 10px;
 }
-
+.categories{
+  min-height: 100vh;
+}
 .job-card {
   background: #FFFFFF;
   padding: 20px;
@@ -93,5 +96,17 @@
  width: calc(100%-50px);
  padding-inline:50px;
  padding-block: 10px;
+}
 
+@media screen and (max-width:910px) {
+  .jobs-container{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width:550px) {
+ .jobs-container{
+  padding-inline: 20px;
+  padding-block: 10px;
+ }
 }

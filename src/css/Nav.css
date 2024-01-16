@@ -17,8 +17,11 @@
 .Navbar img {
   width: 75px;
   height: 75px;
+  z-index: 5;
 }
-
+.Logo{
+  z-index: 5;
+}
 .Navbar a {
   text-decoration: none;
   color: #000000;
@@ -49,3 +52,91 @@
 .Navbar a:hover {
   color: #FF0000;
 }
+
+.HAM{
+  align-items: end;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  height: 30px;
+  justify-content: center;
+  z-index: 2;
+}
+.HAM div:first-child, .HAM div:nth-child(3) {
+background-color: #000;
+height: 5px;
+width: 35px;
+}
+.HAM div:nth-child(2) {
+background-color: #000;
+height: 5px;
+width: 25px;
+}
+@keyframes moveintoview {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .Links{
+    display: none;
+  }
+  .HAM{
+    display: flex;
+    z-index: 5;
+  }
+  
+  .HAMOPEN div{
+    background-color: white !important;
+  }
+  .CLOSE{
+    display: none !important;
+  }
+  .OPEN{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgb(0, 0, 0,.9);
+    color: white !important;
+    flex-direction: column;
+    gap:50px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .Links a{
+    color: white;
+    font-size: 35px;
+    width: 190px;
+    opacity: 0;
+    animation: moveintoview .5s var(--Delay) forwards;
+  }
+  .Delay1 {
+    --Delay: .10s;
+  }
+  
+  .Delay2 {
+    --Delay: .20s;
+  }
+  
+  .Delay3 {
+    --Delay: .30s;
+  }
+
+ 
+}
+
+
+
+

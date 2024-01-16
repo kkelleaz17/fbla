@@ -1,15 +1,11 @@
-.Header{
-    background-color: gray;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+
+
+
+.Header img{
     width: 100%;
-    height: 400px;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-}
-.Header video{
-    position: absolute;
-    left: 0px;
-    top: -450px;
+    height: 100%;
 }
 .Home{
     background-color: var(--White);
@@ -17,4 +13,105 @@
 }
 .Home h1{
     text-align: center;
+}
+.Header {
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(2,300px);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.home-container{
+    min-height: 100vh;
+}
+
+.hero{
+    font-size: 50px;
+}
+.findjobs{
+    background: var(--Red);
+    color: var(--White);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0;
+}
+.contact{
+    border: 2px solid var(--Red);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactsarea{
+    display: flex;
+    flex-direction: row; 
+    gap:30px
+}
+.herounder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:1300px){
+    .Header {
+        grid-template-columns: repeat(4,200px);
+        grid-template-rows: repeat(2,200px);
+    }
+    .hero{
+        font-size: 35px;
+    }
+    .contact,.findjobs{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:900px){
+    .Header {
+        grid-template-columns: repeat(2,300px);
+        grid-template-rows: repeat(4,300px);
+    }
+}
+@media screen and (max-width:640px){
+    .Header {
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(4,200px);
+    }
+}
+@media screen and (max-width:480px){
+    .contactsarea{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        font-size: 30px;
+    }
+    .contact,.findjobs{
+        font-size: 25px;
+    }
+    .Header {
+        grid-template-columns: repeat(1,200px);
+        grid-template-rows: repeat(4,200px);
+    }
+    .Header :nth-child(even){
+        display: none;
+    }
 }
