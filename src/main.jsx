@@ -11,17 +11,19 @@ import AvailablePosition from './pages/AvailablePosition.jsx'; // Importing the 
 import Faq from './pages/Faq.jsx'; // Importing the Faq component from './pages/Faq.jsx'
 import Policy from './pages/Policy.jsx'; // Importing the Policy component from './pages/Policy.jsx'
 import NotPage from './pages/NotPage.jsx'; // Importing the NotPage component from './pages/NotPage.jsx'
+import ThankYou from './pages/ThankYou.jsx'; // Importing the Thank You component from './pages/ThankYou.jsx'
 import './main.css'; // Importing the 'main.css' file
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <> {/* React fragment */}
     <BrowserRouter> {/* BrowserRouter component for routing */}
       <Navbar /> {/* Navbar component */}
-      <Routes> {/* Routes component for defining routes */}
+      <Routes  basename="/my-app"> {/* Routes component for defining routes */}
         <Route element={<Home />} path="/" /> {/* Route for the Home component */}
         <Route element={<Benefits />} path="/benefits" /> {/* Route for the Benefits component */}
         <Route element={<Policy />} path="/privacy" /> {/* Route for the Policy component */}
         <Route element={<Faq />} path="/faq" /> {/* Route for the Faq component */}
+        <Route element={<ThankYou />} path="/ThankYou" /> {/* Route for the ThankYou component */}
         <Route element={<Application />} path="/application/:position" /> {/* Route for the Application component with a parameter */}
         <Route element={<AvailablePositions />} path="/available-positions" /> {/* Route for the AvailablePositions component */}
         <Route element={<AvailablePosition />} path="/available-positions/:position" /> {/* Route for the AvailablePosition component with a parameter */}

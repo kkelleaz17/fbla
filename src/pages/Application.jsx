@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Form.css';
 import '../css/Application.css';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import sendEmail from '../util/sendEmail';
 import VailidateForm from '../util/VailidateForm'; // Typo: Should be 'ValidateForm'
-
 // Functional component for the job application form
 export default function ApplicationForm() {
   // State to manage form input values
+  const navigate = useNavigate()
   const [applicant, setApplicant] = useState({
     fullName: '',
     address: '',
@@ -26,32 +26,40 @@ export default function ApplicationForm() {
   });
 
   // Handling form submission
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
     // Validating form data
-    var Result = VailidateForm({ ...applicant }); // Typo: Should be 'ValidateForm'
-    if (Result !== null) {
-      window.alert(Result);
-      return;
+    try{
+      var Result = VailidateForm({ ...applicant }); // Typo: Should be 'ValidateForm'
+      if (Result !== null) {
+        window.alert(Result);
+        return;
+      }
+      // Sending email with form data
+      var data = await sendEmail({ ...applicant });
+      if(data === false){
+        throw new Error('Test');
+      }
+      // Resetting form fields after submission
+      setApplicant({
+        fullName: '',
+        address: '',
+        phone: '',
+        email: '',
+        socialSecurityNumber: '',
+        selectedJob: '',
+        dob: '',
+        isCitizen: false,
+        isArmedForces: false,
+        hasWorkExperience: false,
+        educationLevel: '',
+        city: '',
+        fulltime: false,
+      });
+      navigate('/ThankYou')
+    }catch{
+      console.log('An error occurred while validating the form');
     }
-    // Sending email with form data
-    sendEmail({ ...applicant });
-    // Resetting form fields after submission
-    setApplicant({
-      fullName: '',
-      address: '',
-      phone: '',
-      email: '',
-      socialSecurityNumber: '',
-      selectedJob: '',
-      dob: '',
-      isCitizen: false,
-      isArmedForces: false,
-      hasWorkExperience: false,
-      educationLevel: '',
-      city: '',
-      fulltime: false,
-    });
   };
 
   // Options for job selection, education level, and city
@@ -123,6 +131,7 @@ export default function ApplicationForm() {
   return (
     <div className="Application-Around">
       <h1 className='Application-heading'>Job Application</h1>
+      <img src={'/staff/application.png'} className='Application-Image' alt="" />
       <form onSubmit={handleSubmit} className='application-form-container'>
         <div>
           <div>
@@ -137,6 +146,7 @@ export default function ApplicationForm() {
                 onChange={handleChange}
                 pattern='^[A-Za-z\s]+$'
                 required
+                placeholder='John Doe'
               />
             </div>
             {/* Additional input fields for contact information */}
@@ -149,6 +159,7 @@ export default function ApplicationForm() {
                 value={applicant.phone}
                 onChange={handleChange}
                 pattern='^\d{10}$'
+                placeholder='xxxxxxxxxx'
                 required
               />
             </div>
@@ -157,6 +168,7 @@ export default function ApplicationForm() {
               <input
                 type="email"
                 id="email"
+                placeholder='JohnDoe@gmail.com'
                 name="email"
                 value={applicant.email}
                 onChange={handleChange}
@@ -329,9 +341,11 @@ export default function ApplicationForm() {
                   />
                   No
                 </label>
+                
               </div>
             </div>
           </div>
+          
         </div>
         {/* Submit button for the form */}
         <button type="submit" className='submit'>Apply</button>

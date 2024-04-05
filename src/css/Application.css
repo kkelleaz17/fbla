@@ -1,9 +1,30 @@
 
 .Application-heading {
-    width: calc(100%-50px);
+    width: calc(100% - 50px);
     padding-inline:50px;
     padding-block: 10px;
 }
+@media screen and (max-width:550px){
+    .Application-heading{
+        padding-right: 0;
+    }
+}
+
+.Application-Image{  
+    width: calc(100% - 130px);
+    height: 450px;
+    padding-inline:50px;
+    padding-block: 10px;
+    object-fit: cover;
+    
+}
+
+@media screen and (max-width:650px) {
+    .Application-Image{  
+        width: calc(100% - 100px);   
+    }
+}
+
 .application-form-container{
     display: flex;
     gap: 10px;

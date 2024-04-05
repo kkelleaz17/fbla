@@ -41,6 +41,14 @@
   margin-bottom: 10px;
 
 }
+
+.job-title{
+  display: flex;
+  flex-direction: column;
+}
+.Available{
+  font-size: 12px !important;
+}
 .ViewMore{
   width: 105px;
   background: var(--Red);

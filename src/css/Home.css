@@ -7,6 +7,10 @@
     width: 100%;
     height: 100%;
 }
+.Home a{
+    text-decoration: none;
+    color: black;
+}
 .Home{
     background-color: var(--White);
     padding-inline:50px;
@@ -44,8 +48,10 @@
     cursor: pointer;
     font-size: 30px;
     margin: 0;
+    width: 380px;
 }
 .contact{
+    width: 380px;
     border: 2px solid var(--Red);
     padding: 10px 20px;
     border-radius: 5px;

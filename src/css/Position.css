@@ -1,14 +1,41 @@
+.job-position-container{
+    display: grid;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 600px 100%;
+    padding-inline:50px;
+    padding-block: 10px;
+}
+
+.job-position-heading b{
+    margin: 0;
+    margin-block: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+    text-align: left !important;
+    color: var(--black);
+    width: calc(100%-100px);
+    margin-bottom: 20px;
+}
+
+.job-position-container img{
+  
+    object-fit: cover;
+    height: 100%;
+    width: calc(100% - 30px);
+}
 .job-position {
     transition: all 0.3s ease-in;
     min-height: 100vh;
+    width: 100%;
   }
 .job-position-heading{
     margin: 0;
     text-align: left !important;
     color: var(--Black);
     width: calc(100%-100px);
-    padding-inline:50px;
-    padding-top: 10px;
     margin-bottom: 0;
 }
 .job-position-subheading{
@@ -18,8 +45,9 @@
     text-align: left !important;
     color: var(--black);
     width: calc(100%-100px);
-    padding-inline:50px;
-    padding-block: 0px;
+}
+.job-BottomArea{
+    width: 500px;
 }
 .job-name{
     height: auto;
@@ -34,8 +62,6 @@
 }
 .job-BottomArea{
     width: calc(100%-100px);
-    padding-inline:50px;
-    margin-top: 50px;
 }
 .job-BottomArea h1{
     font-size: 18px;
@@ -45,9 +71,28 @@
     color: var(--White);
     border: none;
     padding: 10px 20px;
-    margin: 0 5px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in;
     cursor: pointer;
+}
+.ApplyHere:disabled {
+  /* your styling here */
+  cursor: not-allowed; /* example: change cursor to indicate disabled state */
+  background-color: gray;
+}
+
+@media screen and (max-width:1250px) {
+    .job-position-container{
+        display: flex;
+     
+        flex-direction: column-reverse;
+    }
+    .job-position-container img{
+        display: none;
+    }
+    .job-position-container p,.job-position-container li,.job-BottomArea{
+        width: auto !important;
+        
+    }
 }

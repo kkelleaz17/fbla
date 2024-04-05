@@ -12,10 +12,12 @@ const JobBenefits = () => {
       <div className="job-benefits-container">
         {/* Heading for the job benefits section */}
         <h1 className="jobs-benefits-heading">Job Benefits</h1>
-        {/* Mapping through jobBenefits array and rendering BenefitCard component for each job */}
-        {jobBenefits.map((job, i) => (
-          <BenefitCard job={job} key={job.title + i} last={i === jobBenefits.length - 1} />
-        ))}
+        <div className='job-benfits-content'>
+          {/* Mapping through jobBenefits array and rendering BenefitCard component for each job */}
+          {jobBenefits.map((job, i) => (
+            <BenefitCard job={job} key={job.title + i} last={i === jobBenefits.length - 1} />
+          ))}
+        </div>
       </div>
     </div>
   );

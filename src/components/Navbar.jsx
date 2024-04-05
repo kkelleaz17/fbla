@@ -2,7 +2,7 @@
 import React, { useState,useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../css/Nav.css';
-import Tolleson from '../assets/tolles.png';
+import Tolleson from '../assets/icons/tolles.png';
 import RouteName from '../util/RouteName.js'
 // Functional component for the Navbar
 export default function Navbar() {

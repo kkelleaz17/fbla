@@ -42,16 +42,18 @@ const sendEmail = async(applicant) => {
 
 
   // Sending the email using the emailjs library
-  emailjs
+  return await emailjs
     .send(serviceId, templateId, emailParams, userId)
     .then((response) => {
       // Displaying success message on successful submission
       alert('Application Submitted Successfully');
+      return  true;
     })
     .catch((error) => {
       // Handling and logging any errors that occur during email submission
       console.log(error);
       alert('Message failed to send:', error.message);
+      return  false;
       // Preventing the default behavior of the event (e.g., form submission)
       //  event.preventDefault();
     });

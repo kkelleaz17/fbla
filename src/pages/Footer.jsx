@@ -2,28 +2,28 @@
 import React from 'react';
 import '../css/Foot.css';
 
-import x from '../assets/x.png';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
-import youtube from '../assets/youtube.png';
+import x from '../assets/icons/x.png';
+import facebook from '../assets/icons/facebook.png';
+import instagram from '../assets/icons/instagram.png';
+import youtube from '../assets/icons/youtube.png';
 import { useNavigate } from 'react-router-dom';
 
 // Functional component for the Footer
 export default function Footer() {
   // Initializing navigation using useNavigate hook
   const Navigate = useNavigate();
-
+  const  handleClick = () => window.scrollTo(0, 0);
   return (
     // Navigation container with links and social media icons
     <nav className='Footer'>
       <div className="line"></div> {/* Horizontal line for separation */}
       <div className="links">
         {/* Navigation links with onClick event handlers */}
-        <a onClick={() => { Navigate('/') }}>HOME</a>
-        <a onClick={() => { Navigate('/privacy') }}>PRIVACY POLICY</a>
-        <a onClick={() => { Navigate('/application/new') }}>APPLY</a>
-        <a onClick={() => { Navigate('/faq') }}>FAQS</a>
-        <a onClick={() => { Navigate('/available-positions') }}>CAREERS</a>
+        <a onClick={() => { Navigate('/');handleClick() }}>HOME</a>
+        <a onClick={() => { Navigate('/privacy');handleClick()  }}>PRIVACY POLICY</a>
+        <a onClick={() => { Navigate('/application/new');handleClick()  }}>APPLY</a>
+        <a onClick={() => { Navigate('/faq');handleClick()  }}>FAQS</a>
+        <a onClick={() => { Navigate('/available-positions');handleClick()  }}>CAREERS</a>
       </div>
       <div className="line"></div> {/* Another horizontal line */}
       {/* Social media icons */}
